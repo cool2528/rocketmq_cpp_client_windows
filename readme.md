@@ -12,15 +12,20 @@
 + 编译环境 
 系统：windows10 
 MSVS: Visual Studio 2019 版本 16.8.4
+
 + 依赖第三方库
-1、boost_1.5.8 下载地址https://sourceforge.net/projects/boost/files/boost/1.58.0/
-2、jsoncpp git地址：`git clone https://github.com/jsj020122/jsoncpp-0.10.6.git`
-3、libevent git地址 `https://github.com/libevent/libevent.git`
-libevent 最新版本即可 官方指定的构建版本 不支持 openssl1.1.1 故使用最新的版本即可
-4、openssl 下载编译后的即可使用 下载地址 http://slproweb.com/products/Win32OpenSSL.html
+  1、boost_1.5.8 下载地址https://sourceforge.net/projects/boost/files/boost/1.58.0/
+  2、jsoncpp git地址：`git clone https://github.com/jsj020122/jsoncpp-0.10.6.git`
+  3、libevent git地址 `https://github.com/libevent/libevent.git`
+
+  libevent 最新版本即可 官方指定的构建版本 不支持 openssl1.1.1 故使用最新的版本即可
+  4、openssl 下载编译后的即可使用 下载地址 http://slproweb.com/products/Win32OpenSSL.html
+
 5、zlib 构建boost库的时候需要使用
+
 + 特别提醒
-+ boost1.5.8只支持MSVC14.0 也就是vs2015编译工具 所以需要在vs2015 组件中安装msvc2015 14.0的构建工具才能正常构建
+
+  boost1.5.8只支持MSVC14.0 也就是vs2015编译工具 所以需要在vs2019 组件中安装msvc2015 14.0的构建工具才能正常构建
 + boost构建方式
 1.下载好源码解压到磁盘 使用 `x86 Native Tools Command Prompt for VS 2019` 工具 切换到 boost 源码目录 编译64位的就使用`x64 Native Tools Command Prompt for VS 2019`
 2.进入目录以后 执行 `bootstrap.bat` 编译生成 `b2.exe` 构建工具
